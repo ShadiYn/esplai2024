@@ -68,7 +68,6 @@ int a1 = 5;
 int b = 7;
 
 int valor_a=a1;
-int valor_b=b;
 a1=b;
 
 b=valor_a;

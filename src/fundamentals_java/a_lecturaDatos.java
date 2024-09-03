@@ -1,47 +1,21 @@
 package fundamentals_java;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class a_lecturaDatos {
 	
+	
 public static	Scanner entrada = new Scanner(System.in);
 public static int opciones =entrada.nextInt();
+public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 
-	public static void main(String[] args) {
-		
-		do {
-			System.out.println("Introduce el numero que quieras realizar (Numero de ejercicio) ");
-			int i=0;
-			opciones= entrada.nextInt();			
-			
-		}while(opciones >=1 && opciones <=7) {
-			switch(opciones) {
-			
-			case 1:
-				Dolares();
-				break;
-			case 2:
-				Iva();
-				break;
-				
-			case 3:
-				Doble_y_Triple();
-				break;
-				
-			case 4:
-				break;
-				
-			case 5:
-				break;
-				
-			case 6:
-				break;
-			
-			
-		}
-		
-		
+
+	public static void main(String[] args) throws IOException {
+		CalcularArea();
 			
 		
 		
@@ -66,7 +40,7 @@ public static int opciones =entrada.nextInt();
 	
 	public static void Iva() {
 		//2. El IVA para ciertos artículos es del 21%. Realiza un programa que pida un precio y calcule su precio con IVA.
-System.out.println("Introduce el precio que le quieres calcular el iva");
+		System.out.println("Introduce el precio que le quieres calcular el iva");
 		double precioSinIva = entrada.nextInt();
 		
 		double AñadirIva = precioSinIva*0.21;
@@ -91,10 +65,19 @@ System.out.println("Introduce el precio que le quieres calcular el iva");
 		
 	}
 	
-	public static void CalcularArea() {
+	public static void CalcularArea() throws IOException {
 		
 		System.out.println("Introduce el ancho del cuadrado");
-		int ancho = entrada.nextInt();
+		String ancho = br.readLine();
+		int achura = Integer.parseInt(ancho);
+		
+		System.out.println("introduce la altura del cuadrado");
+		String altura = br.readLine();
+		int alto = Integer.parseInt(altura);
+		
+		
+		int area = achura*alto;
+		System.out.println("el area del cuadrado indicado: "+area);
 		
 	}
 	
