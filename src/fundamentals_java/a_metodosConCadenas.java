@@ -16,7 +16,10 @@ public class a_metodosConCadenas {
 		String n1 = null;
 		String n2=null;
 		String n3=null;
-		generarNombre(n1,n2,n3);
+		generarNombre2(n1,n2,n3);
+		
+		
+		
 	}
 	//1
 	public static void longitud(String nombre) {
@@ -140,6 +143,36 @@ int resultado = p1.compareTo(p2);
 	}
 	
 	//9
+	
+	public static void generarNombre2(String n1, String n2,String n3) {
+		
+		
+		//introducir las tres plabras
+				System.out.println("Introduce la primera palabra: ");
+				n1 = sc.next();
+				System.out.println("Introduce la segunda palabra");
+				n2 = sc.next();
+				
+				System.out.println("introduce la tercera palabra");
+				n3 = sc.next();
+				
+				int p1 = n1.length()+1;
+				int p2 = n2.length()+1;
+				int p3 = n3.length()+1;
+				
+				//comprobar que las tres sean mayores que 5 y substraer la ultima letra de cada
+				if(p1 > 5 && p2 >5 && p3 >5) {
+					System.out.println( "Tu nombre será: "+n1.charAt(n1.length()-1)+n2.charAt(n2.length()-1)+n3.charAt(n3.length()-1));
+				}else {
+					System.out.println("error");
+				}
+						
+				
+			}
+		
+		
+		
+	}
 	//10
 	//3
 	//3
@@ -161,4 +194,4 @@ int resultado = p1.compareTo(p2);
 	
 	
 
-}
+
