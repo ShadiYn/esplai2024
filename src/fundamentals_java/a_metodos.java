@@ -28,7 +28,6 @@ public class a_metodos {
 		//echo("Greta");
 		//saludar(Nombre);
 		//InterfazCalculadora(n1,n2);
-		longitud(Nombre);
 	
 	}
 	
@@ -232,12 +231,7 @@ public class a_metodos {
 	
 	
 	//Metodos con cadenas
-	public static void longitud(String nombre) {
-		System.out.println("introduce el nombre pls");
-		nombre = sc.next();
-		
-		System.out.println(nombre.length()); //para contar las letras de la cadena
-	}
+
 	
 	
 	
