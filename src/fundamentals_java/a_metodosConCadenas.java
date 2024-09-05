@@ -114,26 +114,28 @@ int resultado = p1.compareTo(p2);
 	
 	//8
 	public static void generarNombre(String n1, String n2, String n3) {
-		 try{
-				System.out.println("Introduce la primera palabra: ");
-
-			 n1 = sc.next();
-			 if(n1.length()<5) {
-				 System.out.println("La palabra tiene que ser mayor a 5");
-
-			 }
-		 }catch(Exception e ){
-			
-			 
-		 }
-		 if(n1.length()>5) {
-			 System.out.println("Error la palabra tiene que ser mayor que 5");
-		 }
+		
+		
+		//introducir las tres plabras
+		System.out.println("Introduce la primera palabra: ");
+		n1 = sc.next();
 		System.out.println("Introduce la segunda palabra");
 		n2 = sc.next();
+		
 		System.out.println("introduce la tercera palabra");
 		n3 = sc.next();
 		
+		int p1 = n1.length()+1;
+		int p2 = n2.length()+1;
+		int p3 = n3.length()+1;
+		
+		//comprobar que las tres sean mayores que 5
+		if(p1 > 5 && p2 >5 && p3 >5) {
+			System.out.println( "Tu nombre será: "+n1+" "+n2+" "+n3);
+		}else {
+			System.out.println("error");
+		}
+				
 		
 	}
 	
