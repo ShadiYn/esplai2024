@@ -1,6 +1,7 @@
 package fundamentals_java;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
@@ -12,7 +13,10 @@ public class a_metodosConCadenas {
 	public static void main (String[] args) {
 		String Nombre = null;
 		int numero=0;
-		ejercicio_5();
+		String n1 = null;
+		String n2=null;
+		String n3=null;
+		generarNombre(n1,n2,n3);
 	}
 	//1
 	public static void longitud(String nombre) {
@@ -58,10 +62,81 @@ public class a_metodosConCadenas {
 		p2 = sc.next();
 		
 		
+		System.out.println("La primera palabra tiene: "+p1.length()+"letras");
+		System.out.println("la segunda palabra tiene: "+p2.length()+"letras");
+		
+int resultado = p1.compareTo(p2);		
+		
+		if(resultado > 0) {
+			System.out.println("la palabra "+p1+"es mas grande que la segunda"+p2);
+		}else if(resultado <0) {
+			System.out.println("la palabra 2 "+p2+"es mas grande que la palabra 1"+p1);
+		}else {
+			System.out.println("las cadenas son iguales");
+		}
+		
 	}
 	
 	//7
+	public static void devuelveMasLarga2(String p1, String p2, String p3) {
+		System.out.println("Introduce la primera palabra");
+		p1 = sc.next();
+		System.out.println("Introduce la segunda palabra");
+		p2 = sc.next();
+		System.out.println("introduce la tercera palabra");
+		p3 = sc.next();
+		
+		System.out.println("La primera palabra tiene: "+p1.length()+" letras");
+		System.out.println("la segunda palabra tiene: "+p2.length()+" letras");
+		System.out.println("la tercera palabra tiene: "+p3.length()+" letras");
+
+		int cadena1 = p1.length();
+		int cadena2 = p2.length();
+		int cadena3 = p3.length();
+		
+		if(cadena1 > cadena2 && cadena1> cadena3) {
+			System.out.println("La cadena mas grande es la: "+p1);
+		} if(cadena2 >cadena1 && cadena2 >cadena3) {
+			System.out.println("la cadena mas grande es la: "+p2);
+		} if(cadena3 >cadena1 && cadena3>cadena2) {
+			System.out.println("La cadena mas grande es la: "+p3);
+		}
+		
+		
+		
+	
+	
+	
+	
+	
+	
+	}
+	
 	//8
+	public static void generarNombre(String n1, String n2, String n3) {
+		 try{
+				System.out.println("Introduce la primera palabra: ");
+
+			 n1 = sc.next();
+			 if(n1.length()<5) {
+				 System.out.println("La palabra tiene que ser mayor a 5");
+
+			 }
+		 }catch(Exception e ){
+			
+			 
+		 }
+		 if(n1.length()>5) {
+			 System.out.println("Error la palabra tiene que ser mayor que 5");
+		 }
+		System.out.println("Introduce la segunda palabra");
+		n2 = sc.next();
+		System.out.println("introduce la tercera palabra");
+		n3 = sc.next();
+		
+		
+	}
+	
 	//9
 	//10
 	//3

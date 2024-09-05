@@ -85,10 +85,82 @@ public class PruebaCompeticion {
 	}
 	
 	public static void trece() {
-		
+		for(int i=0; i>0 && i<10;i*=2) {
+			System.out.println(i);
+			
+		}
 	}
 	
+	public static void catorce() {
+		for(int i=0; i>0 && i<10;i*=2) {
+			
+			if(i/2 == 0) {
+				System.out.println("par"+i);
+				
+
+			}else {
+				System.out.println("impar"+i);
+			}
+			
+		}
+	}
 	
+	public static void quince() {
+for(int i=0; i>0 && i<10;i*=2) {
+			
+			if(i/3 == 0) {
+				System.out.println(i);
+				
+
+			}
+			
+		}
+	}
+	
+	public void dieciseis() {
+		System.out.println("introduce un numero: ");
+		int n = entrada.nextInt();
+		
+		for(int i =0; i<n;i--) {
+			
+			System.out.println(i);
+		}
+	}
+	
+	public void diecisiete() {
+		
+		System.out.println("introduce un numero: ");
+		int n = entrada.nextInt();
+		
+		for(int i =0; i<n;i++) {
+			while(i<n) {
+				System.out.println(i);
+			
+			System.out.println(i);
+		}
+	}
+	}
+	
+	public void dieciocho() {
+		int numero = entrada.nextInt();
+		for(int i=0; i<numero;i++) {
+			
+			if(i/i==0) {
+				System.out.println(i);
+			}
+		}
+	}
+	
+	public void diecinueve() {
+		int numero = entrada.nextInt();
+		for(int i=0; i<numero;i++) {
+			
+			
+			if(i/i==0) {
+				System.out.println(i);
+			}
+		}
+	}
 	
 	
 	
