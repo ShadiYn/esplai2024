@@ -3,11 +3,12 @@ package fundamentals_java;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class a_metodos {
 	
 	public static 	BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
-
+	public static Scanner sc = new Scanner (System.in);
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader (new InputStreamReader (System.in));
@@ -17,13 +18,17 @@ public class a_metodos {
 		String alto=null;
 		String Greta = "Greta";
 		String Nombre = null;
+		int n1=0;
+		int n2=0;
 		
 		//Valor_1(valor);
 		//Ejercicio_2();
 		//Ejercicio_3();
 		//Ejercicio_4(ancho,alto);
 		//echo("Greta");
-		saludar("shadin");
+		//saludar(Nombre);
+		//InterfazCalculadora(n1,n2);
+		longitud(Nombre);
 	
 	}
 	
@@ -140,11 +145,99 @@ public class a_metodos {
 			e.printStackTrace();
 		}
 	}
+	
+	//6. Añade los operadores booleanos correctos para que la siguiente función tenga sentido.
 
+	public static String testGreaterThan(int val) {
+		  if (val >100) {  // Cambia esta línea
+		    return "Por encima de 100";
+		  }
 
+		  if (val>10) {  // Cambia esta línea
+		    return "Por encima de 10";
+		  }
 
+		  return "10 o menos";
+		}
 	
 	
+	//BLOQUE EJERCICIOS
+	
+	//5. Repetir el ejercicio de la calculadora utilizando funciones para las operaciones aritméticas. Debemos declarar 4 funciones con dos parámetros de entrada cada una: suma(int a, int b), resta(int a, int b,), multiplicacion(int a, int b), division(int a, int b).
+
+	public static void InterfazCalculadora(int n1, int n2) {
+		int opciones;
+		
+		
+		do {
+			System.out.println("Introduce el primer numero: ");
+			n1 = sc.nextInt();
+			
+			System.out.println("Introduce el segundo numero: ");
+			n2 = sc.nextInt();
+			
+			System.out.println("¿Que operacion quieres realizar?");
+			System.out.println("1. sumar");
+			System.out.println("2. restar");
+			System.out.println("3. multiplicar");
+			System.out.println("4. dividir");
+			opciones = sc.nextInt();
+
+			switch(opciones) {
+			case 1:
+				suma(n1,n2);
+				break;
+				
+			case 2:
+				resta(n1,n2);
+				break;
+				
+			case 3:
+				multiplicacion(n1,n2);
+				break;
+				
+			case 4:
+				division(n1,n2);
+				break;
+			
+			
+			}
+			
+		}while(opciones!=0);
+			
+		
+	
+		
+	}
+	
+	public static void suma(int n1, int n2) {
+		int sumar = n1+n2;
+		System.out.println("Suma es: "+sumar);
+	}
+	public static void resta(int n1, int n2) {
+		int restar = n1-n2;
+		System.out.println("Resta es: "+restar);
+	}
+
+	public static void multiplicacion(int n1, int n2) {
+		int multiplicar = n1*n2;
+		System.out.println("Multiplicar es: "+multiplicar);
+		
+	}
+	public static void division(int n1, int n2) {
+		int dividir = n1/n2;
+		System.out.println("dividir es: "+dividir);
+	
+	}
+	
+	
+	//Metodos con cadenas
+	public static void longitud(String nombre) {
+		System.out.println("introduce el nombre pls");
+		nombre = sc.next();
+		
+		System.out.println(nombre.length()); //para contar las letras de la cadena
+	}
 	
 	
 	
