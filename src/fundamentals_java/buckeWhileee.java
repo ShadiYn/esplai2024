@@ -7,29 +7,33 @@ import java.io.InputStreamReader;
 public class buckeWhileee {
 
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
-		BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
+		
 
+		BufferedReader br = new BufferedReader( new InputStreamReader(System.in));
 		boolean correcto = false;
+
+
 		while(correcto == false) {
 			
 			System.out.println("Introduce tu nombre");
 			String Nombre = br.readLine();
 			
-			if(Nombre.equals("")) {
+			if(!Nombre.equals("")) {
 				System.out.println("datos correctos?");
 				String respuesta = br.readLine();
 				
 				if(respuesta.equals("si")) {
 					System.out.println("Puedes continuar con el examen");
+					correcto = true;
 				}else {
-					System.out.println("Error");
+					System.out.println("Error"); 
 				}
 			}
 			
 		}
-		
-		
 	}
+	
+	
+	
 
 }
