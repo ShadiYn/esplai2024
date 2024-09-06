@@ -169,25 +169,37 @@ int resultado = p1.compareTo(p2);
 						
 				
 			}
+	
+	
+	//11
+	public static void tieneLetra(String Cadena, String Letra) {
+		 //hay que hacer que devuelva true si esa letra esta en la palabra sino devovler false
+	}
+	
+		//12.Copy Realizar la evaluación del ejercicio anterior sin tener en cuenta si la letra pasada como parámetro esta en mayúsculas o minúsculas
+
+
+		//13.Copy Hacer una función crearPalabra que reciba como parámetro de entrada una letra y un número y genere una nueva palabra que tenga la letra introducida repetida tantas veces como indique el número.
+
+
+		//14
+		//15
+		//16
+		//17
+		//18
+		//19
+		//20
+		//21
+		//22
+		//23
+	
+	
 		
 		
 		
 	}
-	//10
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
-	//3
+	
+	
 	
 	
 	
