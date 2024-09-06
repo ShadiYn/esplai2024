@@ -3,11 +3,16 @@ package fundamentals_java;
 import java.util.Scanner;
 
 public class enesima_PotenciaEjercicio {
+	public static Scanner entrada = new Scanner (System.in);
+
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Scanner entrada = new Scanner (System.in);
+		
+	}
+	
+	public static void enesimaNumero() {
 		System.out.println("introduce la base");
 		int base = entrada.nextInt();
 		System.out.println("introduce la potencia");
@@ -22,5 +27,11 @@ public class enesima_PotenciaEjercicio {
 		System.out.println(resultado);
 		
 	}
+	
+	
+	public static void factorialDelNumero() {
+		
+	}
+	
+	}
 
-}

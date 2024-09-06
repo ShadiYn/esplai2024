@@ -15,7 +15,7 @@ public class Ejercicio_CostesViaje {
 		String destino = br.next();
 			
 	
-		int resultado1 = costeHotel(numNoches);
+		//int resultado1 = costeHotel(numNoches);
 		
 		//int resultado2;
 		//resultado2=costeAvion(destino);
@@ -24,21 +24,21 @@ public class Ejercicio_CostesViaje {
 		//int resultado3 = costeAlquilerCoche(numNoches);
 
 		//int sumaCostes = resultado1 + resultado2 + resultado3;
-		System.out.println("Coste total: " + resultado1+" la noche"+"");
+		//System.out.println("Coste total: " + resultado1+" la noche"+"");
 		
 	}
 	
 	
 	
-	public static int  costeHotel(int nNoches) {
+	/*public static int  costeHotel(int nNoches) {
 		//cada noche cuesta 140€
 		int Suma = 140*nNoches;
 		
 		System.out.println(Suma);
 		
-	}
+	}*/
 	
-	public static  costeAvion() {
+	/*public static  costeAvion() {
 		String destino;
 		int costes;
 		if(destino.equals("Oviedo")) {
@@ -56,7 +56,7 @@ public class Ejercicio_CostesViaje {
 		
 		System.out.println("Costes de avion = "+costes);
 		
-	}
+	}*/
 
 	public static void CosteAlquilerCoche() {
 		
