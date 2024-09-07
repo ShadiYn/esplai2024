@@ -22,7 +22,6 @@ public class a_EjercicioDni {
 		Dni = sc.next();
 		
 		Longitud = Dni.length();
-		VerificarDigitos();
 		
 		
 		
