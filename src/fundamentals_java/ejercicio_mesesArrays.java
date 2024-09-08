@@ -16,6 +16,8 @@ public class ejercicio_mesesArrays {
 		}else {
 			System.out.println(mes[numero-1]);
 		}
+		
+		
 	}
 	
 	
