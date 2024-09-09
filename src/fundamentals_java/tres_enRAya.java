@@ -1,4 +1,6 @@
 package fundamentals_java;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class tres_enRAya {
@@ -18,7 +20,6 @@ public class tres_enRAya {
 			
 			alguienGano = evaluarGanador(tablero);
 			if(alguienGano)System.out.println("Enhorabuena, player " + ficha);
-			System.out.println(tablero);
 			tirada++;
 		} while (!alguienGano);
 
@@ -54,14 +55,21 @@ public class tres_enRAya {
 		
 	}
 	
-	public static  String Jugador(String [] tablero, String ficha) {
+	 public static void Jugador(String [] tablero, String ficha) {
 		Scanner sc = new Scanner (System.in);
 
-		System.out.println("Que posicion quieres moverte Jugador:  "+ficha);
+		if(ficha.equals("X")) {
+			System.out.println("Que posicion quieres moverte Jugador:  "+ficha);
 			int posicion = sc.nextInt();
 			
-			return tablero[posicion] = ficha;
+			tablero[posicion] = ficha;
 			
+		}else {
+			System.out.println("Ordenador ha movido a la posicion: ");
+			int posicion = getComputerMove(tablero);
+			tablero[posicion]=ficha;
+		}
+		
 			
 	}
 	
@@ -90,6 +98,40 @@ public class tres_enRAya {
 		
 		return false;
 
+	}
+	
+	static   int getComputerMove(String [] tablero) {
+		//comprobar si la maquina puede hacer un movimiento y ganar la partida:
+			for(int i =0; i<tablero.length;i++) {
+				String [] tablero2 = tablero.clone();
+				if(tablero2[i].equals("_")) {
+					tablero2[i]="X";
+					
+					if(evaluarGanador(tablero2)) {
+						return i;
+					}
+				}
+			}
+			
+			
+		//comprobar si tras mover el humano puede ganar
+			
+			String [] tablero2 = tablero.clone();
+			for(int i =0; i<tablero2.length;i++) {
+				
+				if(tablero2[i].equals("_")) {
+					tablero2[i]="X";
+
+					if(evaluarGanador(tablero2)) {
+						return i;
+					}
+				}
+				
+			}
+			
+			
+			return -1;
+		
 	}
 
 }
