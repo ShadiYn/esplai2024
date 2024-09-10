@@ -30,7 +30,7 @@ public class Main {
 		boolean[] primeraTirada;
 		//restriccion de tiros por casillas
 		int pozo =-1;
-		int [] casillasOca = {5,9,14,18,23,27,32,36,41,45,50,54,59};
+		int [] casillas_Oca = {5,9,14,18,23,27,32,36,41,45,50,54,59};
 	
 		//pregunta por la cantidad de jugadores que van a participar
 		System.out.println("Indica el numero de personas que jugarán: ");
